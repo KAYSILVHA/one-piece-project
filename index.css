@@ -8,7 +8,6 @@ body{
   background-color: #000;
 }
 
-
 main{
   display: flex;
   width: 100%;
@@ -24,7 +23,7 @@ main{
 }
 
 .side-one .logo{
-  width: 700px;
+  width: 100%;
 }
 
 .side-two{
@@ -56,5 +55,20 @@ main{
 .side-two div:hover{
   width: 73%;
   height:370px;
-  transition: all 0.4s ease-in-out;
+  transition: 0.8s ease;
+}
+
+@media (max-width: 500px){
+  main{
+    display: block;
+  }
+
+  .side-one{
+    width: 100vw;
+  }
+
+  .side-two{
+    width: 100vw;
+    margin: 0;
+  }
 }
